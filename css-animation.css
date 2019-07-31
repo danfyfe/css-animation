@@ -1,0 +1,166 @@
+/* .cheese {
+  display: block;
+
+  width: 200px;
+  height: 200px;
+  margin: 10% auto;
+  animation-name: shrink-spin, fade-in;
+
+  animation-duration: 2s;
+  animation-iteration-count:1;
+  animation-direction: normal;
+
+} */
+.cheese {
+  display: block;
+  position: absolute;
+  /* opacity: 0; */
+  width: 200px;
+  height: 200px;
+  left: 40%;
+  margin: 10% auto;
+  /* animation-name: shrink, fade-in; */
+  animation: throw-it 10s linear;
+  animation-fill-mode: forwards;
+  /* animation: throw-it 1s infinite linear; */
+  /* animation-name: spin, move-it;
+  aimation-duration:  */
+  /* animation-duration: 2s; */
+  /* animation-iteration-count:1; */
+  /* animation-direction: normal; */
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* .cheese:hover {
+  animation: throw-it 2s 1 linear;
+} */
+
+@keyframes throw-it {
+  from {
+    top: 0;
+    transform: rotate(0deg);
+  }
+  to {
+    top: 1000px;
+    transform: rotate(360deg)
+  }
+}
+
+/* .cheese:hover {
+  animation: fade-in 2s 1;
+  animation-fill-mode: forwards;
+} */
+
+
+h1 {
+  display: block;
+  text-align: center;
+  /* font-size: 0px; */
+  /* animation: go-crazy 2s infinite; */
+  animation: go-crazy 2s forwards;
+  /* animation-direction: reverse; */
+  /* animation-fill-mode: forwards;
+  animation-name: blahh;
+  animation-duration: ;
+  animation-fill-mode before and after states;
+  animation-iteration-count: ; */
+  /* animation-fill-mode: both; */
+
+}
+
+h1 {
+  display: block;
+  text-align: center;
+  animation: grow-and-spin 2s;
+}
+
+.submit{
+  height: 100px;
+  width: 100px;
+}
+
+.submit:hover {
+  animation: moveButton 1s 1;
+  animation-fill-mode: forwards;
+}
+
+.text-div {
+  margin-top: 20%;
+}
+
+@keyframes grow-and-spin {
+  0%{
+    transform:rotate(0deg);
+    font-size: 0px;
+  }
+  30%{
+    transform:rotate(180deg);
+    font-size: 50px;
+  }
+  50%{
+    transform:rotate(360deg);
+    font-size: 100px;
+  }
+  100%{
+    transform:rotate(0deg);
+  }
+}
+
+@keyframes shrink {
+  from{
+    width: 400px;
+    height: 400px;
+  }
+  to{
+    width: 200px;
+    height: 200px;
+  }
+}
+@keyframes fade-in {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity:1;
+  }
+}
+
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 400px;
+  }
+}
+
+@keyframes animationName {
+	from {
+		font-size: 10px;
+	}
+	to {
+		font-size:100px;
+	}
+}
+
+@keyframes moveButton {
+  from{
+    margin-left: 0;
+  }
+  to {
+    margin-left: 100%;
+  }
+}
+
+
